@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <!-- Center Overlay -->
+    <div id="app" class="center container overlay">
+        <!-- title Of Guessing Game -->
+        <header>
+            <h1>Guessing Game</h1>
+            <hr>
+            <h3>[ Guess a number between 1 - 100 ]</h3>
+        </header>
+        <!-- Input Guesses -->
+        <div id="input-parent">
+            <input id="player-input" type="number" placeholder="#" maxlength="3">
+            <button id="submit" onclick="play()" class="sub-button">Guess</button>
+        </div>
+        <!-- Guessing Row -->
+        <main id="guesses" class="row">
+            <ul id="guess-list">
+                <li class="guess">
+                    ─
+                </li>
+                <li class="guess">
+                    ─
+                </li>
+                <li class="guess">
+                    ─
+                </li>
+                <li class="guess">
+                    ─
+                </li>
+                <li class="guess">
+                    ─
+                </li>
+            </ul>
+        </main>
+        <!-- Display Hint text if close -->
+        <div id="hint-calling" class="hint-row">
+            <!-- INSERT WORDS TO HOT OR COLD -->
+            <p id="feedback">Good Luck, Have Fun!</p>
+        </div>
+        <!-- Hint and Reset Buttons-->
+        <div id="button-hint-parent">
+            <div id="menu-btns">
+                <div id="btn">
+                    <button id="fancy-button" class="reset" type="button"> Reset</button>
+                </div>
+                <div id="btn">
+                    <button id="fancy-button" class="hint" type="button">Hint</button> <!-- ADD disabled="" into button when they hit it the first time-->
+                </div>
+            </div>
+            <div id="hint-display">
+                <!-- SHOWS THE HINTS WHEN HINT BUTTON IS HIT -->
+                <p id="hint-msg">THIS IS WHERE THE HINT GOES AND THE #</p>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <h4>Design &copy Ashley Dela Rosa</h4>
+        <div class="links"></div>
+            <a href="http://www.github.com/AshCheeks" target="_blank"><img src="assets\images\icons8-github-48.png" alt="Github"></a>
+            <a href="http://www.twitter.com/AshxCheeks" target="_blank"><img src="assets\images\icons8-twitter-circled-48.png" alt="Twitter"></a>
+            <a href="http://www.linkedin.com/in/ashley-dela-rosa-1aa6a31ba" target="_blank"><img src="assets\images\icons8-linkedin-circled-48.png" alt="Linkedin"></a>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js\guessing-game2.js"></script>
+</body>
+</html>
